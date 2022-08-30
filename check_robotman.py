@@ -4,6 +4,7 @@ from gym.utils import seeding
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 def sum_angle(a, b):
     c = a + b
     if c >= np.pi:
@@ -11,6 +12,7 @@ def sum_angle(a, b):
     elif c < -np.pi:
         c += 2 * np.pi
     return c
+
 
 class Manipulator2D(gym.Env):
 
